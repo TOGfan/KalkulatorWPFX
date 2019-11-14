@@ -7,6 +7,34 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            
+            <ColumnDefinition Width ="*"/>
+            <ColumnDefinition Width ="3*"/>
+            <ColumnDefinition Width ="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock Text="X= " FontSize="30" x:Name="xtextblock"/>
+            <TextBlock Text="y= " FontSize="30" x:Name="ytextblock"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBox FontSize="30" x:Name="xtextbox"/>
+            <TextBox FontSize="30" x:Name="ytextbox"/>
+        </StackPanel>
+       
+            <TextBlock Text="Wynik:" FontSize="30" Grid.Row="1"/>
+        <TextBlock Text="0 " FontSize="30" Grid.Row="1" Grid.Column="2" x:Name="Resulttextblock"/>
+        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
+            <Button Width="50" Height="50" Content="+" Click="Button_Click"/>
+            <Button Width="50" Height="50" Content="-" Click="Button_Click_1"/>
+
+
+        </StackPanel>
     </Grid>
 </Window>

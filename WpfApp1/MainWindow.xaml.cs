@@ -24,5 +24,17 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int x = Convert.ToInt32(xtextbox.Text);
+            int y = Convert.ToInt32(ytextbox.Text);
+            Resulttextblock.Text = (x + y).ToString();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
